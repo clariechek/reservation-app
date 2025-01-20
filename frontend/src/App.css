@@ -1,0 +1,373 @@
+.header {
+  background: white;
+  border-radius: 8px;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 12px;
+}
+
+.nav-link {
+  background-color: white;
+  border: 1px solid #eee;
+  color: #333;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.nav-link:hover {
+  background-color: var(--background-hover);
+  border-color: var(--primary-green);
+  color: var(--primary-green);
+}
+
+.nav-link.active {
+  background-color: var(--primary-green);
+  border-color: var(--primary-green);
+  color: white;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.add-class-form {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.submit-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+.class-schedule {
+  padding: 20px 0;
+}
+
+.day-section {
+  margin-bottom: 30px;
+}
+
+.day-header {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.class-table {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.class-table-header {
+  display: grid;
+  grid-template-columns: 100px 1fr 120px 100px 100px 100px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #eee;
+  font-weight: 500;
+}
+
+.class-row {
+  display: grid;
+  grid-template-columns: 100px 1fr 120px 100px 100px 100px;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+  transition: background-color 0.2s;
+}
+
+.class-row:hover {
+  background-color: #f8f9fa;
+}
+
+.cell {
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #333;
+}
+
+.class-table-header .cell {
+  color: #666;
+  font-weight: 500;
+}
+
+.book-button {
+  background-color: var(--primary-green);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.book-button:hover {
+  background-color: #45a049;
+}
+
+.main-content {
+  padding: 30px;
+}
+
+.class-card {
+  cursor: pointer;
+}
+
+.class-card:hover .book-button {
+  background-color: #45a049;
+}
+
+:root {
+  --primary-green: #4CAF50;
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --border-color: #eeeeee;
+  --background-hover: #f8f9fa;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.week-selector {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.week-nav-button {
+  background-color: white;
+  border: 1px solid var(--border-color);
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--text-primary);
+  transition: all 0.2s;
+}
+
+.week-nav-button:hover:not(:disabled) {
+  background-color: var(--background-hover);
+  border-color: var(--primary-green);
+  color: var(--primary-green);
+}
+
+.week-nav-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.week-indicator {
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+/* Calendar styles */
+.calendar-view {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.calendar-header {
+  display: grid;
+  grid-template-columns: 100px repeat(7, 1fr);
+  background-color: #666;
+  color: white;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.calendar-header-cell {
+  padding: 12px;
+  text-align: center;
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+.empty-cell {
+  background-color: #555;
+}
+
+.day-name {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.day-date {
+  font-size: 0.9em;
+  opacity: 0.9;
+}
+
+.calendar-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.calendar-row {
+  display: grid;
+  grid-template-columns: 100px repeat(7, 1fr);
+  min-height: 40px;
+  border-bottom: 1px solid #eee;
+}
+
+.time-cell {
+  padding: 8px;
+  background: #f8f9fa;
+  border-right: 1px solid #eee;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.calendar-cell {
+  padding: 4px;
+  border-right: 1px solid #eee;
+  min-height: 40px;
+}
+
+.class-block {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  color: white;
+  cursor: pointer;
+  margin: 2px 0;
+  text-align: center;
+}
+
+/* Class type colors */
+/* .arruda-fit {
+  background-color: #ff0000;
+} */
+
+/* .boxing-fit {
+  background-color: #666;
+} */
+
+/* .bjj {
+  background-color: #000;
+} */
+
+/* .bjj-no-gi {
+  background-color: #000;
+} */
+
+/* .muay-thai {
+  background-color: #00ff00;
+} */
+
+.hot-yoga {
+  background-color: #0000ff;
+}
+
+/* .kids-bjj {
+  background-color: #ffd700;
+} */
+
+.pilates {
+  background-color: #40e0d0;
+}
+
+/* Hover effect for class blocks */
+.class-block:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+  transition: all 0.2s;
+}
